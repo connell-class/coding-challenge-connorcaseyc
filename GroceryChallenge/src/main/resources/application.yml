@@ -1,0 +1,18 @@
+server:
+  port: 9033
+  
+spring:
+  datasource:
+    url: 
+      jdbc:postgresql://connordb.crcfj1jsjtlz.us-east-1.rds.amazonaws.com:5432/groceries
+    username: hiber_user
+    password: pass
+    dbcp2:
+      driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    properties: 
+      hibernate: 
+        default_schema: public
