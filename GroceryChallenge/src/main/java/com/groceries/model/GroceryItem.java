@@ -28,7 +28,7 @@ public class GroceryItem {
 	@Enumerated(EnumType.STRING)
 	private ItemType itemtype;
 	
-	@JsonIgnore
+//	@JsonIgnore
 	@ManyToOne(fetch=FetchType.EAGER)
 	@JoinColumn(name="g_items")
 	private GroceryList g_items;

@@ -24,7 +24,7 @@ public class GroceryList {
 	@Column
 	private String listname;
 	
-//	@JsonIgnore
+	@JsonIgnore
 	@OneToMany(mappedBy="g_items", cascade=CascadeType.ALL, fetch=FetchType.EAGER)
 	private List<GroceryItem> g_items;
 

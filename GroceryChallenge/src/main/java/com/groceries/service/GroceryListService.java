@@ -27,5 +27,10 @@ public class GroceryListService {
 	public void deleteGroceryList(GroceryList gl) {
 		gld.delete(gl);
 	}
+	
+//	public GroceryList grabList(GroceryList gl) {
+//		GroceryList gl2 = gld.findById(gl.getGl_id());
+//		return gl2;
+//	}
 
 }
